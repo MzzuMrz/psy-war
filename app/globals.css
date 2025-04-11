@@ -103,7 +103,7 @@ body::after {
 .ascii-art {
   color: #0a0a0a;
   text-shadow: 0 0 5px #000000;
-  animation: glitch 1s infinite alternate-reverse, colorCycle 8s infinite;
+  animation: glitch 5s infinite alternate-reverse, colorCycle 8s infinite;
   position: relative;
 }
 
