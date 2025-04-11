@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
 import { Terminal, FileText, Lock } from "lucide-react";
-import ArticleImage from '../assets/b23dee1d-cfd0-456d-827a-35a101c84abb.jpg'
+import ArticleImage from "../assets/b23dee1d-cfd0-456d-827a-35a101c84abb.jpg";
 import { useEffect, useState } from "react";
 
 export default function Home() {
   const currentYear = new Date().getFullYear();
   const [terminalText, setTerminalText] = useState("");
   const [nodeCount, setNodeCount] = useState(42);
-  
+
   // Efecto de escritura para el terminal
   useEffect(() => {
     const fullText = `> inject -m "Los memes son cargas útiles. El lenguaje es un arma."
@@ -18,7 +18,7 @@ export default function Home() {
 > cat /etc/psyops/manifesto
 "Tu percepción es el objetivo. El feed es el campo de batalla."
 > exit`;
-    
+
     let i = 0;
     const typing = setInterval(() => {
       setTerminalText(fullText.substring(0, i));
@@ -27,24 +27,24 @@ export default function Home() {
         clearInterval(typing);
       }
     }, 50);
-    
+
     return () => clearInterval(typing);
   }, []);
-  
+
   // Contador animado
   useEffect(() => {
     const interval = setInterval(() => {
-      setNodeCount(prev => {
+      setNodeCount((prev) => {
         // Números fluctuantes entre 40 y 56
         const change = Math.floor(Math.random() * 3) - 1; // -1, 0, o 1
         const newValue = prev + change;
         return newValue >= 40 && newValue <= 56 ? newValue : prev;
       });
     }, 3000);
-    
+
     return () => clearInterval(interval);
   }, []);
-  
+
   // Añadimos CSS para todas las animaciones
   const styles = `
     .scrollbar-hide::-webkit-scrollbar {
@@ -189,7 +189,7 @@ export default function Home() {
         <Link
           href="https://open.substack.com/pub/chaos0rder/p/manifiesto-memetico-argentino?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
           className="nav-button bg-gradient-to-b from-[#A62C21] to-[#590202] text-[#F2D7B6] px-4 py-1 rounded font-bold shadow-md hover:from-[#8C2A14] hover:to-[#590202]"
-          target="_blank" 
+          target="_blank"
           rel="noopener noreferrer"
         >
           READ THE MANIFEST
@@ -216,7 +216,7 @@ export default function Home() {
           <div className="overflow-x-auto scrollbar-hide">
             <div className="min-w-max mx-auto">
               <pre className="text-center text-[0.4rem] xs:text-[0.5rem] sm:text-xs md:text-sm lg:text-base ascii-art font-mono whitespace-pre leading-tight">
-              {`
+                {`
 ██▓███    ██████ ▓██   ██▓ ▒█████   ██▓███    ██████ 
 ▓██░  ██▒▒██    ▒  ▒██  ██▒▒██▒  ██▒▓██░  ██▒▒██    ▒ 
 ▓██░ ██▓▒░ ▓██▄     ▒██ ██░▒██░  ██▒▓██░ ██▓▒░ ▓██▄   
@@ -231,22 +231,23 @@ export default function Home() {
               </pre>
             </div>
           </div>
-          
+
           <div className="text-center mt-4 mb-6">
             <h2 className="text-xl md:text-2xl font-bold text-[#590202] mb-4 glitch-text">
               CHAOS//ORDER :: SISTEMA EN PRIMERA CARGA
             </h2>
             <p className="text-[#8C2A14] mb-6">
-              Portal de calibración para proteccion memetica. 
-              psy-ops en progreso...
+              Portal de calibración para proteccion memetica. psy-ops en
+              progreso...
             </p>
             <p className="text-[#A62C21] text-sm italic mb-4">
-              "No son chistes. Son virus de ideología. Inyectan ideas. Infectan percepciones."
+              "No son chistes. Son virus de ideología. Inyectan ideas. Infectan
+              percepciones."
             </p>
             <Link
               href="https://open.substack.com/pub/chaos0rder/p/manifiesto-memetico-argentino?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
               className="inline-block bg-gradient-to-b from-[#A62C21] to-[#590202] text-[#F2D7B6] px-6 py-2 rounded font-bold shadow-md hover:from-[#8C2A14] hover:to-[#590202] nav-button"
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
             >
               <div className="flex items-center">
@@ -281,7 +282,7 @@ export default function Home() {
               HABILITADO EL SÁBADO
             </div>
             <div className="text-[#D9C0A3] mt-4 text-sm text-center max-w-md">
-            Cada símbolo pide tu atención. Esperá
+              Cada símbolo pide tu atención. Esperá
             </div>
             <div className="text-[#F2D7B6] text-md italic text-center m-3">
               "Un meme no se combate con razón. Se combate con otro meme."
@@ -291,7 +292,7 @@ export default function Home() {
           {/* Contenido del artículo (ahora blurreado) */}
           <div className="border-b-2 border-[#8C2A14] mb-4 pb-2">
             <h3 className="text-[#590202] text-xl mb-2 font-bold">
-             Que es la memetica y que es la saturacion memetica?
+              Que es la memetica y que es la saturacion memetica?
             </h3>
           </div>
 
@@ -303,26 +304,23 @@ export default function Home() {
                     src={ArticleImage}
                     alt="Diagrama de Interfaz Neural"
                     fill
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: "cover" }}
                     className="rounded"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#590202] bg-opacity-80 p-1 text-xs text-[#F2D7B6] font-bold">
-                    CLASIFICADO//NIVEL-7
-                  </div>
                 </div>
               </div>
 
               <div className="md:w-2/3">
                 <h3 className="text-[#590202] text-xl mb-2 font-bold">
-                  Ingeniería de *Prompts* Recursivos: Rompiendo la Barrera Semántica
+                  ¿Qué es la Memética y qué es la Saturación Memética?
                 </h3>
 
                 <div className="flex flex-wrap gap-2 mb-3">
                   <span className="text-xs bg-[#F2D7B6] text-[#8C2A14] px-2 py-1 border border-[#8C2A14] rounded font-bold">
-                    PROMPT-TECH
+                    MEMÉTICA
                   </span>
                   <span className="text-xs bg-[#F2D7B6] text-[#8C2A14] px-2 py-1 border border-[#8C2A14] rounded font-bold">
-                    MEMÉTICA
+                    CULTURA DIGITAL
                   </span>
                   <span className="text-xs bg-[#F2D7B6] text-[#8C2A14] px-2 py-1 border border-[#8C2A14] rounded font-bold">
                     PSY-OPS
@@ -331,27 +329,36 @@ export default function Home() {
 
                 <div className="text-[#590202] mb-4">
                   <p className="mb-2">
-                    Los últimos avances en *prompt engineering* recursivo lograron
-                    evadir los límites semánticos de los modelos de lenguaje,
-                    abriendo un nuevo frente en las capacidades de guerra memética.
-                    <span className="italic text-[#A62C21]"> "El meme no quiere hacerte reir. No quiere que pienses, quiere que reacciones."</span>
+                    La <strong>memética</strong> es el estudio de cómo las ideas
+                    se comportan como virus. Un <em>meme</em> no es solo un
+                    chiste de internet: es una unidad cultural que se replica de
+                    mente en mente. Puede ser un eslogan, una melodía o una
+                    creencia, y su éxito depende de qué tan bien logra
+                    reproducirse.
+                  </p>
+                  <p className="mb-2">
+                    Cuando los memes se usan de forma deliberada para influir en
+                    las masas, hablamos de <strong>guerra memética</strong>.
+                    Pero cuando una narrativa se repite tanto que ya nadie la
+                    registra, aparece la <strong>saturación memética</strong>:
+                    la sobrecarga simbólica que transforma el mensaje en ruido.
                   </p>
                   <p>
-                    Nuestro equipo investigativo documentó técnicas que usan
-                    encuadres contextuales anidados para implantar patrones
-                    mentales persistentes que se propagan con mínima degradación
-                    por redes digitales.
+                    <span className="italic text-[#A62C21]">
+                      "Un meme no quiere que pienses. Quiere que lo compartas.
+                      Pero cuando todo es meme, ya nada dice nada."
+                    </span>
                   </p>
                 </div>
 
                 <div className="flex justify-between items-center text-xs">
                   <div className="text-[#8C2A14] font-bold">
-                    PUBLICADO: 2023-09-15
+                    PUBLICADO: 2025-04-10
                   </div>
                   <Link
-                    href="/article/recursive-prompt-engineering"
+                    href="/article/memetica-saturacion"
                     className="text-[#A62C21] font-bold hover:underline"
-                    target="_blank" 
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     LEER DOCUMENTO COMPLETO →
@@ -369,7 +376,7 @@ export default function Home() {
           <Link
             href="https://open.substack.com/pub/chaos0rder/p/manifiesto-memetico-argentino?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
             className="nav-button bg-gradient-to-b from-[#A62C21] to-[#590202] text-[#F2D7B6] px-16 py-1 rounded font-bold shadow-md hover:from-[#8C2A14] hover:to-[#590202]"
-            target="_blank" 
+            target="_blank"
             rel="noopener noreferrer"
           >
             READ THE MANIFEST
@@ -401,7 +408,8 @@ export default function Home() {
                 ESTE SITIO MODIFICA TUS PATRONES DE PENSAMIENTO
               </span>
               <div className="mt-2 text-[#A62C21] italic">
-                "El contagio ya sucedió. No te diste cuenta. No necesitó tu permiso."
+                "El contagio ya sucedió. No te diste cuenta. No necesitó tu
+                permiso."
               </div>
             </div>
           </div>
