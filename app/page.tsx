@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Terminal, FileText, ArrowRight, ChevronDown } from "lucide-react"; // Añadido ChevronDown
-import ArticleImage from "../assets/b23dee1d-cfd0-456d-827a-35a101c84abb.png";
+import ArticleImage from "../assets/image.png";
 import { useEffect, useState, useRef } from "react"; // Añadido useRef
 
 export default function Home() {
@@ -209,6 +209,47 @@ export default function Home() {
     .article-section:hover .highlight-overlay {
       opacity: 1;
     }
+    
+    /* Estilos para enlaces tipo early 2000s */
+    .retro-links {
+      background: #F2D7B6;
+      border: 2px dashed #8C2A14;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .retro-link {
+      color: #590202;
+      font-weight: bold;
+      text-decoration: underline;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: linear-gradient(to right, #A62C21, #8C2A14);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      transition: all 0.3s;
+    }
+    .retro-link:hover {
+      transform: scale(1.05);
+      text-shadow: 0 0 5px rgba(166,44,33,0.7);
+    }
+    .archive-title {
+      font-size: 14px;
+      color: #8C2A14;
+      margin-bottom: 8px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .blink-new {
+      animation: blink 1s step-end infinite;
+      color: #A62C21;
+      font-weight: bold;
+      font-size: 11px;
+      margin-left: 5px;
+      vertical-align: super;
+    }
   `;
 
   return (
@@ -321,13 +362,15 @@ export default function Home() {
           </div>
         )}
 
-        {/* Featured Article (mejorado con efectos UX) */}
+        {/* Featured Article (NUEVO ARTÍCULO) */}
         <div className="bg-[#D9C0A3] border-2 border-[#8C2A14] rounded-lg p-4 mb-8 shadow-md article-section relative">
           <div className="border-b-2 border-[#8C2A14] mb-4 pb-2">
             <h3 className="text-[#590202] text-xl mb-2 font-bold">
-              Calamaro y el Partenón de los Inmortales: Cuando ya no quedan
-              ídolos que matar
+              ¿Tralalero Tralala o Tum tum tum sahur?
             </h3>
+            <div className="text-[#8C2A14] text-sm italic">
+              Un tiburón con Nikes me explicó el colapso simbólico
+            </div>
           </div>
 
           <article className="mb-6">
@@ -336,7 +379,7 @@ export default function Home() {
                 <div className="relative w-full aspect-square mb-2 bg-[#F2D7B6] border-2 border-[#8C2A14] rounded shadow-md overflow-hidden">
                   <Image
                     src={ArticleImage}
-                    alt="Calamaro minimalista"
+                    alt="Meme IA generado"
                     fill
                     style={{ objectFit: "cover" }}
                     className="rounded"
@@ -346,41 +389,30 @@ export default function Home() {
 
               <div className="md:w-2/3 text-[#590202]">
                 <p className="mb-2">
-                  <strong>Herencia simbólica:</strong> "Alta Suciedad" no me
-                  llegó por algoritmo sino por linaje: mi viejo conoció a mi
-                  vieja con "Cartas sin marcar". Calamaro se transmite como ADN
-                  cultural.
+                  <strong>Un meme a las 2:47AM:</strong> "Veo un tiburón con tres patas, usando Nikes, diciendo tralalero tralala. Me río. Fuerte. Como un imbécil. Y me freno: ¿esto es gracioso o ya me rompieron el lóbulo frontal?"
                 </p>
                 <p className="mb-2">
-                  <strong>Ídolos descartables vs. roca eterna:</strong> La
-                  saturación memética devora nuevos dioses cada 24 hs. Calamaro
-                  resiste porque ya era símbolo antes del algoritmo.
+                  <strong>La IA crea cultura sin permiso:</strong> "No es solo un meme. Es un virus con peluca de chiste. Una IA lo parió en dos segundos y ahora vive en mi cabeza sin pagar alquiler."
                 </p>
                 <p className="mb-2">
-                  <strong>El salmón contra la corriente:</strong> Nadó en caos,
-                  fue falopero, escribió poemas imposibles de encapsular en
-                  10 segundos. Por eso es inmune a la obsolescencia.
+                  <strong>La risa como vaselina ideológica:</strong> "Nadie se queja de que esto lo hizo una máquina. ¿Y sabés por qué? Porque te hizo reír. Y la risa es la vaselina perfecta para que te metan cualquier narrativa."
                 </p>
                 <p className="mb-2">
-                  <strong>Inmunidad memética:</strong> Sus memes no se gastan
-                  porque viven en la cultura familiar, en el cuerpo, en la
-                  historia. No necesitan validación ni métricas.
+                  <strong>El sentido de lo absurdo:</strong> "Tralalero no tiene narrativa. No tiene contexto. Y eso es lo que lo hace perfecto para este mundo. ¿Querés que piense? No, gracias."
                 </p>
                 <p className="mb-2">
-                  <strong>Símbolo peligroso:</strong> Demuestra que se puede
-                  existir fuera del ciclo de engagement. No negocia con el
-                  algoritmo y, por eso mismo, desafía al sistema.
+                  <strong>El caballo de Troya memético:</strong> "La IA entró por el lado más vulnerable: el que te hace reír. Y ahora que te hace reír, te puede hacer cualquier cosa."
                 </p>
                 <p className="italic text-[#A62C21]">
-                  «El símbolo que no se puede destruir, no se puede reemplazar.»
+                  «Tum tum tum sahur. Boom. Millones de views.»
                 </p>
                 
                 {/* Contenedor del botón mejorado */}
                 <div className="ribbon-container relative">
                   <div className="flex justify-between items-center mt-6 bg-[#F2D7B6] p-3 rounded border-2 border-[#8C2A14] shadow-md">
-                    <div className="text-[#8C2A14] font-bold">PUBLICADO: HOY</div>
+                    <div className="text-[#8C2A14] font-bold">PUBLICADO: 14 ABRIL 2025</div>
                     <Link
-                      href="https://open.substack.com/pub/chaos0rder/p/calamaro-y-el-partenon-de-los-inmortales?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+                      href="https://open.substack.com/pub/chaos0rder/p/tralalero-tralala-o-tum-tum-tum-sahur?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
                       ref={readArticleRef}
                       className={`bg-gradient-to-b from-[#A62C21] to-[#590202] text-[#F2D7B6] px-4 py-2 rounded font-bold shadow-md glow-effect flex items-center ${showPulse ? 'article-button-animated' : ''}`}
                       target="_blank"
@@ -390,6 +422,7 @@ export default function Home() {
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </div>
+                  <div className="ribbon">NUEVO</div>
                 </div>
               </div>
             </div>
@@ -397,6 +430,19 @@ export default function Home() {
           
           {/* Overlay para destacar el área del botón */}
           <div className="highlight-overlay"></div>
+        </div>
+        
+        {/* Artículo anterior en estilo retro early 2000s */}
+        <div className="retro-links">
+          <div className="archive-title">:: ARCHIVO DE ARTÍCULOS ::</div>
+          <Link
+            href="https://open.substack.com/pub/chaos0rder/p/calamaro-y-el-partenon-de-los-inmortales?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+            className="retro-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            [.//] Calamaro y el Partenón de los Inmortales: Cuando ya no quedan ídolos que matar
+          </Link>
         </div>
       </div>
 
