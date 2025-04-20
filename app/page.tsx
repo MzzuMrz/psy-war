@@ -366,10 +366,10 @@ export default function Home() {
         <div className="bg-[#D9C0A3] border-2 border-[#8C2A14] rounded-lg p-4 mb-8 shadow-md article-section relative">
           <div className="border-b-2 border-[#8C2A14] mb-4 pb-2">
             <h3 className="text-[#590202] text-xl mb-2 font-bold">
-              ¿Tralalero Tralala o Tum tum tum sahur?
+              Manual de supervivencia memética
             </h3>
             <div className="text-[#8C2A14] text-sm italic">
-              Un tiburón con Nikes me explicó el colapso simbólico
+              No quiero que dejes de consumir, yo también lo hago; solo seamos conscientes, disfrutemos del meme sin ser su rehén
             </div>
           </div>
 
@@ -379,7 +379,7 @@ export default function Home() {
                 <div className="relative w-full aspect-square mb-2 bg-[#F2D7B6] border-2 border-[#8C2A14] rounded shadow-md overflow-hidden">
                   <Image
                     src={ArticleImage}
-                    alt="Meme IA generado"
+                    alt="Ilustración memética"
                     fill
                     style={{ objectFit: "cover" }}
                     className="rounded"
@@ -389,30 +389,30 @@ export default function Home() {
 
               <div className="md:w-2/3 text-[#590202]">
                 <p className="mb-2">
-                  <strong>Un meme a las 2:47AM:</strong> "Veo un tiburón con tres patas, usando Nikes, diciendo tralalero tralala. Me río. Fuerte. Como un imbécil. Y me freno: ¿esto es gracioso o ya me rompieron el lóbulo frontal?"
+                  <strong>Somos rehenes digitales:</strong> "Observá tu pulgar: se mueve sin tu permiso, deslizás más de 90 metros diarios de contenido sin decidirlo. Cada vibración, cada meme, cada alerta fue calibrada en laboratorios neurodopamínicos para hackearte."
                 </p>
                 <p className="mb-2">
-                  <strong>La IA crea cultura sin permiso:</strong> "No es solo un meme. Es un virus con peluca de chiste. Una IA lo parió en dos segundos y ahora vive en mi cabeza sin pagar alquiler."
+                  <strong>Las 4 leyes del contagio:</strong> "Velocidad supera a verdad. Indignación = combustible. Ruido como arma. Adiestramiento emocional. No quieren que pienses. Quieren que seas su antena viral."
                 </p>
                 <p className="mb-2">
-                  <strong>La risa como vaselina ideológica:</strong> "Nadie se queja de que esto lo hizo una máquina. ¿Y sabés por qué? Porque te hizo reír. Y la risa es la vaselina perfecta para que te metan cualquier narrativa."
+                  <strong>Síntomas de infección:</strong> "Fatiga digital permanente, apatía existencial. Chispazos de euforia seguidos de un profundo vacío emocional. Memoria en llamas: recordás perfectamente el contenido, jamás su origen."
                 </p>
                 <p className="mb-2">
-                  <strong>El sentido de lo absurdo:</strong> "Tralalero no tiene narrativa. No tiene contexto. Y eso es lo que lo hace perfecto para este mundo. ¿Querés que piense? No, gracias."
+                  <strong>Antídotos meméticos:</strong> "Seguile el rastro a opiniones que odiás. Antes de compartir: inhalá 3 veces. Si recibís el mismo meme desde 3 lugares → silencio. Ridiculizá el meme. Desarrollá empatía cognitiva."
                 </p>
                 <p className="mb-2">
-                  <strong>El caballo de Troya memético:</strong> "La IA entró por el lado más vulnerable: el que te hace reír. Y ahora que te hace reír, te puede hacer cualquier cosa."
+                  <strong>Recupera tu autonomía:</strong> "Tocá pasto. Identificá patrones. DON'T FEED THE TROLL. Desconectá estratégicamente. Cada meme que compartís te reprograma un poco más. Si no compilás tu mente, alguien más lo hará."
                 </p>
                 <p className="italic text-[#A62C21]">
-                  «Tum tum tum sahur. Boom. Millones de views.»
+                  «Leas, compartas o ignores esto, "ellos" ya midieron tu reacción. Es hora de que empieces a medirla vos.»
                 </p>
                 
                 {/* Contenedor del botón mejorado */}
                 <div className="ribbon-container relative">
                   <div className="flex justify-between items-center mt-6 bg-[#F2D7B6] p-3 rounded border-2 border-[#8C2A14] shadow-md">
-                    <div className="text-[#8C2A14] font-bold">PUBLICADO: 14 ABRIL 2025</div>
+                    <div className="text-[#8C2A14] font-bold">PUBLICADO: 20 ABRIL 2025</div>
                     <Link
-                      href="https://open.substack.com/pub/chaos0rder/p/tralalero-tralala-o-tum-tum-tum-sahur?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+                      href="https://open.substack.com/pub/chaos0rder/p/manual-de-supervivencia-memetica?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
                       ref={readArticleRef}
                       className={`bg-gradient-to-b from-[#A62C21] to-[#590202] text-[#F2D7B6] px-4 py-2 rounded font-bold shadow-md glow-effect flex items-center ${showPulse ? 'article-button-animated' : ''}`}
                       target="_blank"
@@ -432,17 +432,28 @@ export default function Home() {
           <div className="highlight-overlay"></div>
         </div>
         
-        {/* Artículo anterior en estilo retro early 2000s */}
+        {/* Artículos anteriores en estilo retro early 2000s */}
         <div className="retro-links">
           <div className="archive-title">:: ARCHIVO DE ARTÍCULOS ::</div>
-          <Link
-            href="https://open.substack.com/pub/chaos0rder/p/calamaro-y-el-partenon-de-los-inmortales?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
-            className="retro-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            [.//] Calamaro y el Partenón de los Inmortales: Cuando ya no quedan ídolos que matar
-          </Link>
+          <div className="flex flex-col space-y-2">
+            <Link
+              href="https://open.substack.com/pub/chaos0rder/p/tralalero-tralala-o-tum-tum-tum-sahur?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+              className="retro-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              [.//] ¿Tralalero Tralala o Tum tum tum sahur? - Un tiburón con Nikes me explicó el colapso simbólico
+              <span className="blink-new">RECIENTE</span>
+            </Link>
+            <Link
+              href="https://open.substack.com/pub/chaos0rder/p/calamaro-y-el-partenon-de-los-inmortales?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+              className="retro-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              [.//] Calamaro y el Partenón de los Inmortales: Cuando ya no quedan ídolos que matar
+            </Link>
+          </div>
         </div>
       </div>
 
