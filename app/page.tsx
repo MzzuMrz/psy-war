@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Terminal, FileText, ArrowRight, ChevronDown } from "lucide-react"; // Añadido ChevronDown
-import ArticleImage from "../assets/image.png";
+import ArticleImage from "../assets/b23dee1d-cfd0-456d-827a-35a101c84abb.png";
 import { useEffect, useState, useRef } from "react"; // Añadido useRef
 
 export default function Home() {
@@ -366,10 +366,10 @@ export default function Home() {
         <div className="bg-[#D9C0A3] border-2 border-[#8C2A14] rounded-lg p-4 mb-8 shadow-md article-section relative">
           <div className="border-b-2 border-[#8C2A14] mb-4 pb-2">
             <h3 className="text-[#590202] text-xl mb-2 font-bold">
-              Manual de supervivencia memética
+              Ética Micelial: Una Filosofía Regenerativa para la Era Digital
             </h3>
             <div className="text-[#8C2A14] text-sm italic">
-              No quiero que dejes de consumir, yo también lo hago; solo seamos conscientes, disfrutemos del meme sin ser su rehén
+              La naturaleza sape
             </div>
           </div>
 
@@ -379,7 +379,7 @@ export default function Home() {
                 <div className="relative w-full aspect-square mb-2 bg-[#F2D7B6] border-2 border-[#8C2A14] rounded shadow-md overflow-hidden">
                   <Image
                     src={ArticleImage}
-                    alt="Ilustración memética"
+                    alt="Ilustración de micelio"
                     fill
                     style={{ objectFit: "cover" }}
                     className="rounded"
@@ -389,30 +389,30 @@ export default function Home() {
 
               <div className="md:w-2/3 text-[#590202]">
                 <p className="mb-2">
-                  <strong>Somos rehenes digitales:</strong> "Observá tu pulgar: se mueve sin tu permiso, deslizás más de 90 metros diarios de contenido sin decidirlo. Cada vibración, cada meme, cada alerta fue calibrada en laboratorios neurodopamínicos para hackearte."
+                  <strong>Replanteando la difusión de ideas:</strong> "¿Quién decide qué ideas merecen prosperar? Tradicionalmente, la respuesta ha sido ceder ese poder a algoritmos opacos controlados por grandes plataformas digitales. Pero existe una alternativa radical, inspirada en la sabiduría descentralizada del micelio."
                 </p>
                 <p className="mb-2">
-                  <strong>Las 4 leyes del contagio:</strong> "Velocidad supera a verdad. Indignación = combustible. Ruido como arma. Adiestramiento emocional. No quieren que pienses. Quieren que seas su antena viral."
+                  <strong>Una ética fúngica:</strong> "Mi propuesta es una ética basada en la vitalidad ecosistémica: florecimiento comunitario, regeneración simbólica y equilibrio sistémico, tomando inspiración directa del mundo fúngico."
                 </p>
                 <p className="mb-2">
-                  <strong>Síntomas de infección:</strong> "Fatiga digital permanente, apatía existencial. Chispazos de euforia seguidos de un profundo vacío emocional. Memoria en llamas: recordás perfectamente el contenido, jamás su origen."
+                  <strong>Tecnología distribuida:</strong> "Esta propuesta no se basa en una IA centralizada, sino en una red distribuida de agentes autónomos pero interconectados, que aprenden adaptativamente de sus contextos culturales locales, colaborando lateralmente como el micelio."
                 </p>
                 <p className="mb-2">
-                  <strong>Antídotos meméticos:</strong> "Seguile el rastro a opiniones que odiás. Antes de compartir: inhalá 3 veces. Si recibís el mismo meme desde 3 lugares → silencio. Ridiculizá el meme. Desarrollá empatía cognitiva."
+                  <strong>Aceleración descentralizada:</strong> "Esta visión se conecta con el concepto d/acc: aceleración tecnológica descentralizada y defensiva. No se trata solo de avanzar tecnológicamente, sino de hacerlo estratégicamente, favoreciendo tecnologías que distribuyen el poder en lugar de concentrarlo."
                 </p>
                 <p className="mb-2">
-                  <strong>Recupera tu autonomía:</strong> "Tocá pasto. Identificá patrones. DON'T FEED THE TROLL. Desconectá estratégicamente. Cada meme que compartís te reprograma un poco más. Si no compilás tu mente, alguien más lo hará."
+                  <strong>Un futuro simbiótico:</strong> "El futuro al que aspiramos es un cambio profundo en cómo circulan las ideas: pasar de plataformas centralizadas hacia redes abiertas, gobernadas colectivamente por comunidades autónomas e interconectadas."
                 </p>
                 <p className="italic text-[#A62C21]">
-                  «Leas, compartas o ignores esto, "ellos" ya midieron tu reacción. Es hora de que empieces a medirla vos.»
+                  «Un futuro simbiótico donde todos podamos florecer juntos, guiados por una tecnología alineada con los principios más profundos de la vida y la regeneración natural.»
                 </p>
                 
                 {/* Contenedor del botón mejorado */}
                 <div className="ribbon-container relative">
                   <div className="flex justify-between items-center mt-6 bg-[#F2D7B6] p-3 rounded border-2 border-[#8C2A14] shadow-md">
-                    <div className="text-[#8C2A14] font-bold">PUBLICADO: 20 ABRIL 2025</div>
+                    <div className="text-[#8C2A14] font-bold">PUBLICADO: 29 ABRIL 2025</div>
                     <Link
-                      href="https://open.substack.com/pub/chaos0rder/p/manual-de-supervivencia-memetica?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+                      href="https://open.substack.com/pub/chaos0rder/p/etica-micelial-una-filosofia-regenerativa?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
                       ref={readArticleRef}
                       className={`bg-gradient-to-b from-[#A62C21] to-[#590202] text-[#F2D7B6] px-4 py-2 rounded font-bold shadow-md glow-effect flex items-center ${showPulse ? 'article-button-animated' : ''}`}
                       target="_blank"
@@ -437,13 +437,21 @@ export default function Home() {
           <div className="archive-title">:: ARCHIVO DE ARTÍCULOS ::</div>
           <div className="flex flex-col space-y-2">
             <Link
+              href="https://open.substack.com/pub/chaos0rder/p/manual-de-supervivencia-memetica?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+              className="retro-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              [.//] Manual de supervivencia memética - No quiero que dejes de consumir, solo seamos conscientes
+              <span className="blink-new">RECIENTE</span>
+            </Link>
+            <Link
               href="https://open.substack.com/pub/chaos0rder/p/tralalero-tralala-o-tum-tum-tum-sahur?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
               className="retro-link"
               target="_blank"
               rel="noopener noreferrer"
             >
               [.//] ¿Tralalero Tralala o Tum tum tum sahur? - Un tiburón con Nikes me explicó el colapso simbólico
-              <span className="blink-new">RECIENTE</span>
             </Link>
             <Link
               href="https://open.substack.com/pub/chaos0rder/p/calamaro-y-el-partenon-de-los-inmortales?r=558e5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
