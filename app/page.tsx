@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Terminal, FileText, ArrowRight, ChevronDown } from "lucide-react"; // Añadido ChevronDown
-import ArticleImage from "../assets/b23dee1d-cfd0-456d-827a-35a101c84abb.png";
+import ArticleImage from "../assets/image2.png";
 import { useEffect, useState, useRef } from "react"; // Añadido useRef
 
 export default function Home() {
